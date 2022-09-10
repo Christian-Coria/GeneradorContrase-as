@@ -24,7 +24,7 @@ def generatedPassword(request):
         characters.extend(list('!@#$%^&*(){}[]'))
     if request.GET.get('numbers'):
         characters.extend(list('1234567890'))
-
+    
     length = int(request.GET.get('length', 10))
 
     for x in range(length):
